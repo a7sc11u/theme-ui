@@ -1,0 +1,22 @@
+{
+  "name": "@theme-ui/markup",
+  "version": "0.0.1",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "sideEffects": false,
+  "scripts": {
+    "prepare": "microbundle --no-compress",
+    "watch": "microbundle watch --no-compress"
+  },
+  "author": "Apostolos Christodoulou <@a7sc11u>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "@theme-ui/core": "*",
+    "react": "^16.11.0"
+  }
+}
