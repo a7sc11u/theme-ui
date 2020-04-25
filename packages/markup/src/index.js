@@ -32,9 +32,15 @@ export const ui = html.reduce(
     res[tag] = createUIComponent(tag)
     return res
   },
-  // initial value contains the custom method
   {
+    // <ui.tag as="p" sx={{}}/>
+    tag: ({ as, ...rest }) => {
+      const Tag = createUIComponent(as)
+      return <Tag {...rest} />
+    },
+    // const UiComponent = ui.custom(AnyComponent)
     custom: createUIComponent,
+    // <ui.fragment sx={{}}/>
     fragment: UIFragment,
   }
 )
