@@ -4,7 +4,7 @@ Theme UI Markup lets you write style objects with responsive, theme-aware ergono
 This package powers the `sx` prop in Theme UI.
 
 ```sh
-npm i @theme-ui/css
+npm i @theme-ui/markup
 ```
 
 https://theme-ui.com
